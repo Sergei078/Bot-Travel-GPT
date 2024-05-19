@@ -20,4 +20,4 @@ def geo_key():
     markup_geo = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
     button_geo = types.KeyboardButton("Задать местоположение📍", requests_location=True)
     markup_geo.add(button_geo)
-    return markup_geo
+    return button_geo
