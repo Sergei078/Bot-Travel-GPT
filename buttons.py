@@ -5,7 +5,7 @@ def menu_key():
     markup_menu = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
     button_1 = types.KeyboardButton("Обновить геолокацию📍")
     button_2 = types.KeyboardButton("Начать путешествие ✈️ ")
-    markup_menu.add(button_1)
+    markup_menu.add(button_1, button_2)
     return markup_menu
 
 
