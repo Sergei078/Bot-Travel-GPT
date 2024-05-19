@@ -18,4 +18,5 @@ def i_know_where_you_live(lat, long):
     except Exception as e:
         err_msg = f'ошибка: {e}'
         logger.error(err_msg)
-        return False, err_msg
+
+        return False, 'ошибка в получении геоданных'
