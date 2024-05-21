@@ -19,7 +19,16 @@ def ask_gpt(prompt_key, messages, temperature=0.7):
             "stream": False,
             "temperature": temperature
         },
-        "messages": SYSTEM_PROMPTS[prompt_key] + messages
+        "messages": [
+            {
+                "role": "system",
+                "text": SYSTEM_PROMPTS[prompt_key]
+            },
+            {
+                "role": "user",
+                "text": messages
+            }
+        ]
     }
     try:
         response = session.post(GPT_URL, headers=headers, json=data)
