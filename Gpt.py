@@ -58,14 +58,6 @@ def yandex_gpt_interesting_facts(city, max_tokens=MAX_GPT_TOKENS, temperature=0.
         return "Ошибка в нейросети"
 
 
-# Existing functions
-def yandex_gpt_features_city(city):
-    try:
-        return ask_gpt('features_city', f" {city}")
-    except Exception:
-        return "Ошибка в нейросети"
-
-
 def yandex_gpt_clothes(temperature, wind, humidity, info_description):
     try:
         prompt = f" температура {temperature}, ветер {wind}, влажность {humidity}. {info_description}"
