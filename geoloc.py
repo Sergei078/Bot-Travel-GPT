@@ -14,16 +14,17 @@ def i_know_where_you_live(lat, long):
         headers = {'Accept-Language': 'ru'}
         req = requests.get(
             f'https://eu1.locationiq.com/v1/reverse.php?key={GEO_TOKEN}&lat={lat}&lon={long}&format=json',
-            headers=headers).json()
+            headers=headers)
 
         # req['req']['county_code'] - код страны по стандарту ISO 3166-1 alpha-2, поможет определить язык?
+        req_js = req.json()
 
         city = 'не найдено'
         for key in keys_list:
-            if key in req['address']:
-                city = req['address'].get(key)
+            if key in req_js['address']:
+                city = req_js['address'].get(key)
 
-        country = req['address'].get('country')
+        country = req_js['address'].get('country')
         if req.status_code == 200:
             return True, city, country
         else:
