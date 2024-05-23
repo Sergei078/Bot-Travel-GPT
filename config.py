@@ -12,7 +12,7 @@ MAX_GPT_TOKENS = 5000
 TOKENIZE_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/tokenizeCompletion"
 GPT_MODEL = 'yandexgpt-lite'
 GPT_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
-LOGS = 'creds/logs.log'
+LOGS = 'log/logs.log'
 SYSTEM_PROMPT = {
     'features_city': "Проанализируй и предоставь подробное описание достопримечательностей и интересных мест "
                      "следующего города:",
@@ -21,6 +21,9 @@ SYSTEM_PROMPT = {
                "предложи подходящие варианты одежды для нахождения на улице.",
     'beautiful_presentation': "Сформулируй информативный и визуально привлекательный текст о текущей погоде в "
                               "указанном городе, включая температуру, ветер и влажность, используя смайлики для "
-                              "описания каждого погодного условия."
+                              "описания каждого погодного условия.",
+    'nature_features': "Опиши природные особенности и как они влияют на жизнь в следующем городе:"
 }
+
+
 
