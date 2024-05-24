@@ -11,6 +11,7 @@ MAX_GPT_TOKENS = 250
 TOKENIZE_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/tokenizeCompletion"
 GPT_MODEL = 'yandexgpt'
 GPT_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+summarize_MODEL = 'https://yandex.com/api/v1.0/summarize/text'
 DB_FILE = 'user_city.db'
 user_token = 5000
 LOGS = 'logConfig.log'
