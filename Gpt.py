@@ -81,12 +81,37 @@ def yandex_gpt_nature_features(city):
         return "Ошибка в нейросети"
 
 
-def yandex_summarize(text):
-    url = 'https://yandex.com/api/v1.0/summarize/text'
-    headers = {'Authorization': f'Bearer {IAM_TOKEN}', 'Content-Type': 'application/json'}
-    data = {'text': text}
-    response = requests.post(url, headers=headers, json=data)
-    if response.status_code == 200:
-        return response.json().get('summary')
-    else:
-        return "Ошибка: " + response.text
+def yandex_summarize(prompt_key, messages, max_tokens=MAX_GPT_TOKENS, temperature=0.7):
+    headers = {
+        'Authorization': f'Bearer {IAM_TOKEN}',
+        'Content-Type': 'application/json'
+    }
+    data = {
+        'modelUri': f"gpt://{FOLDER_ID}/{summarize_MODEL}",
+        "completionOptions": {
+            "stream": False,
+            "temperature": temperature,
+            "maxTokens": max_tokens
+        },
+        "messages": [
+            {
+                "role": "system",
+                "text": prompt_key
+            },
+            {
+                "role": "user",
+                "text": messages
+            }
+        ]
+    }
+    try:
+        response = session.post(GPT_URL, headers=headers, json=data)
+        logging.debug("GPT API response: %s", response.text)
+        if response.status_code != 200:
+            logging.error("GPT API error with status code: %s", response.status_code)
+            return "Ошибка в нейросети"
+        answer = response.json()['result']['alternatives'][0]['message']['text']
+        return answer
+    except Exception as e:
+        logging.error("Failed to connect to GPT: %s", e, exc_info=True)
+        return "Ошибка в нейросети"
