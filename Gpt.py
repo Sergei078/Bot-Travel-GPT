@@ -79,3 +79,14 @@ def yandex_gpt_nature_features(city):
         return ask_gpt('nature_features', city)
     except Exception:
         return "Ошибка в нейросети"
+
+
+def yandex_summarize(text):
+    url = 'https://yandex.com/api/v1.0/summarize/text'
+    headers = {'Authorization': f'Bearer {IAM_TOKEN}', 'Content-Type': 'application/json'}
+    data = {'text': text}
+    response = requests.post(url, headers=headers, json=data)
+    if response.status_code == 200:
+        return response.json().get('summary')
+    else:
+        return "Ошибка: " + response.text
