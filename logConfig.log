@@ -1,0 +1,157 @@
+2024-05-24 15:13:20,015 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:13:23,068 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:16:41,112 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:16:43,183 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:16:46,951 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:16:48,229 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:16:49,956 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:35:29,059 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:59:49,867 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 15:59:55,930 FILE: bot.py IN: facts MESSAGE: unsupported operand type(s) for -=: 'int' and 'str'
+2024-05-24 16:01:32,943 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:01:38,980 FILE: bot.py IN: wheather MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 479
+2024-05-24 16:01:51,718 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:04:25,277 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:09:59,896 FILE: Gpt.py IN: ask_gpt MESSAGE: GPT API error with status code: 429
+2024-05-24 16:10:06,403 FILE: bot.py IN: clothes MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 570
+2024-05-24 16:10:12,915 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:13:10,248 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.log'
+2024-05-24 16:13:14,447 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.log'
+2024-05-24 16:14:13,389 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 16:14:18,947 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 16:14:18,947 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 16:14:19,134 FILE: bot.py IN: wheather MESSAGE: '<=' not supported between instances of 'NoneType' and 'int'
+2024-05-24 16:14:41,426 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:14:52,804 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:14:55,846 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.txt'
+2024-05-24 16:14:56,813 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.txt'
+2024-05-24 16:14:57,138 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:14:57,727 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.txt'
+2024-05-24 16:15:55,912 FILE: bot.py IN: clothes MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 319
+2024-05-24 16:18:38,926 FILE: Gpt.py IN: ask_gpt MESSAGE: GPT API error with status code: 500
+2024-05-24 16:30:44,144 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:39:07,854 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:39:59,606 FILE: bot.py IN: clothes MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 320
+2024-05-24 16:40:00,989 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 16:44:11,685 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:14:59,193 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:14:59,206 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:17:49,491 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:17:50,414 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:18:18,181 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:08,703 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:10,389 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:10,938 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:13,228 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:17,681 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:34,722 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 17:19:39,983 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:10:47,770 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:11:27,406 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:12:05,145 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:13:24,070 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:13:32,098 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:13:51,311 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:13:53,937 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:14:36,044 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:15:13,007 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:15:17,409 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:16:06,395 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:16:14,063 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:16:18,551 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:16:24,888 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:16:29,315 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:18:05,458 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:19:14,912 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:19:22,510 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:22:56,032 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:22:58,241 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:22:58,363 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:22:58,558 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:23:28,783 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:23:28,784 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:24:28,832 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 19:26:27,033 FILE: bot.py IN: clothes MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 388
+2024-05-24 20:11:36,775 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:11:51,779 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:11:54,947 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:12:00,314 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:12:04,406 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:12:08,211 FILE: database.py IN: select_translate MESSAGE: no such column: translate
+2024-05-24 20:12:08,425 FILE: bot.py IN: translate_lang MESSAGE: translate() takes 1 positional argument but 2 were given
+2024-05-24 20:14:07,771 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:14:25,082 FILE: database.py IN: select_translate MESSAGE: no such column: translate
+2024-05-24 20:14:25,189 FILE: bot.py IN: translate_lang MESSAGE: translate() takes 1 positional argument but 2 were given
+2024-05-24 20:16:14,119 FILE: database.py IN: select_translate MESSAGE: no such column: translate
+2024-05-24 20:16:14,238 FILE: bot.py IN: translate_lang MESSAGE: 'NoneType' object has no attribute 'chat'
+2024-05-24 20:17:12,422 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:17:12,426 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:17:12,562 FILE: bot.py IN: wheather MESSAGE: '<=' not supported between instances of 'NoneType' and 'int'
+2024-05-24 20:17:15,816 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:17:32,888 FILE: database.py IN: update_city MESSAGE: no such column: translate
+2024-05-24 20:17:34,856 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:17:37,528 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:17:37,529 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:17:39,028 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:17:39,028 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:17:40,775 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:17:47,028 FILE: database.py IN: update_city MESSAGE: no such column: translate
+2024-05-24 20:17:48,409 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:01,564 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:19:01,565 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:03,442 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:19:06,198 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:06,199 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:19:17,492 FILE: database.py IN: select_translate MESSAGE: no such column: translate
+2024-05-24 20:19:17,650 FILE: bot.py IN: translate_lang MESSAGE: translate() takes 1 positional argument but 2 were given
+2024-05-24 20:19:23,184 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:23,188 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:19:45,640 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:45,641 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:19:45,779 FILE: bot.py IN: facts MESSAGE: '<=' not supported between instances of 'NoneType' and 'int'
+2024-05-24 20:20:05,626 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:20:05,627 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:20:15,483 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.log'
+2024-05-24 20:20:20,067 FILE: bot.py IN: log MESSAGE: [Errno 2] No such file or directory: 'logs.log'
+2024-05-24 20:20:22,545 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:20:22,545 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:20:24,419 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:20:27,899 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:20:27,901 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:20:41,978 FILE: bot.py IN: log MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: file must be non-empty
+2024-05-24 20:20:44,689 FILE: bot.py IN: log MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: file must be non-empty
+2024-05-24 20:20:46,109 FILE: bot.py IN: log MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: file must be non-empty
+2024-05-24 20:20:47,053 FILE: bot.py IN: log MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: file must be non-empty
+2024-05-24 20:20:47,824 FILE: bot.py IN: log MESSAGE: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: file must be non-empty
+2024-05-24 20:20:53,343 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:20:53,343 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 20:20:54,958 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 20:21:03,430 FILE: database.py IN: update_city MESSAGE: no such column: translate
+2024-05-24 20:21:04,794 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:18:34,304 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:18:34,305 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:22:41,122 FILE: database.py IN: select_translate MESSAGE: no such column: translate
+2024-05-24 22:22:41,349 FILE: bot.py IN: translate_lang MESSAGE: translate() takes 1 positional argument but 2 were given
+2024-05-24 22:28:34,468 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:28:34,469 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:28:42,271 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:28:50,516 FILE: database.py IN: update_city MESSAGE: no such column: translate
+2024-05-24 22:28:51,612 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:28:56,201 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:28:56,203 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:35:06,424 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:35:06,425 FILE: database.py IN: select_token MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:35:06,593 FILE: bot.py IN: wheather MESSAGE: '<=' not supported between instances of 'NoneType' and 'int'
+2024-05-24 22:35:09,313 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:36:00,744 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:36:00,745 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:36:03,731 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:36:11,222 FILE: database.py IN: update_city MESSAGE: no such column: translate
+2024-05-24 22:36:12,421 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:37:12,575 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:37:12,576 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:37:14,650 FILE: database.py IN: add_message MESSAGE: table user_city has no column named translate
+2024-05-24 22:37:24,031 FILE: database.py IN: select_city MESSAGE: 'NoneType' object is not subscriptable
+2024-05-24 22:40:05,826 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 22:40:55,230 FILE: database.py IN: add_message MESSAGE: UNIQUE constraint failed: user_city.user_id
+2024-05-24 22:41:04,921 FILE: bot.py IN: wheather_tomorrow MESSAGE: No connection adapters were found for 'os.getenv(https://api.openweathermap.org/data/2.5/forecast?'

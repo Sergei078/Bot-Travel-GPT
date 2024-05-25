@@ -7,12 +7,14 @@ GEO_TOKEN = getenv('GEO_TOKEN')
 API_WEATHER = getenv('API_WEATHER')
 FOLDER_ID = getenv('FOLDER_ID')
 IAM_TOKEN = getenv('IAM_TOKEN')
-ADMINS_IDS = ''
-MAX_GPT_TOKENS = 5000
+MAX_GPT_TOKENS = 250
 TOKENIZE_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/tokenizeCompletion"
-GPT_MODEL = 'yandexgpt-lite'
+GPT_MODEL = 'yandexgpt'
 GPT_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
-LOGS = 'log/logs.log'
+summarize_MODEL = 'https://yandex.com/api/v1.0/summarize/text'
+DB_FILE = 'user_city.db'
+user_token = 5000
+LOGS = 'logConfig.log'
 SYSTEM_PROMPT = {
     'features_city': "Проанализируй и предоставь подробное описание достопримечательностей и интересных мест "
                      "следующего города:",
@@ -25,5 +27,16 @@ SYSTEM_PROMPT = {
     'nature_features': "Опиши природные особенности и как они влияют на жизнь в следующем городе:"
 }
 
-
-
+lang_code = {
+    '🇨🇳': "zn",
+    '🇬🇧': "en",
+    '🇧🇾': "be",
+    '🇩🇪': "de",
+    '🇪🇸': "es",
+    '🇪🇪': "et",
+    '🇫🇷': "fr",
+    '🇯🇵': "ja",
+    '🇵🇹': "pt",
+    '🇷🇴': "ro",
+    '🇰🇿': "kk"
+}
