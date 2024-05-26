@@ -1,6 +1,7 @@
-import sqlite3
-from config import DB_FILE, user_token
 import logging
+import sqlite3
+
+from config import DB_FILE, user_token
 
 path_to_db = DB_FILE  # файл базы данных
 
@@ -17,7 +18,8 @@ def create_database():
                 user_id INTEGER PRIMARY KEY,
                 city TEXT,
                 photo_id INTEGER,
-                user_token INTEGER)
+                user_token INTEGER,
+                translate TEXT)
             ''')
             logging.info("DATABASE: База данных создана")  # делаем запись в логах
     except Exception as e:
@@ -32,9 +34,9 @@ def add_message(user_id):
             cursor = conn.cursor()
             # записываем в таблицу новое сообщение
             cursor.execute('''
-                    INSERT INTO user_city (user_id, city, photo_id, user_token) 
-                    VALUES (?, ?, ?, ?)''',
-                           (user_id, '', 0, user_token)
+                    INSERT INTO user_city (user_id, city, photo_id, user_token, translate) 
+                    VALUES (?, ?, ?, ?, ?)''',
+                           (user_id, '', 0, user_token, '')
                            )
             conn.commit()  # сохраняем изменения
             logging.info(f"DATABASE: INSERT INTO messages "
@@ -56,6 +58,53 @@ def select_city(user_id):
             city = cursor.fetchone()[0]
             logging.info(f"DATABASE: Город пользователя {user_id} получен")
             return city
+    except Exception as e:
+        logging.error(e)
+
+
+def select_token(user_id):
+    try:
+        with sqlite3.connect(path_to_db) as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                SELECT user_token
+                FROM user_city
+                WHERE user_id = ?
+            ''', (user_id,))
+            token = cursor.fetchone()[0]
+            logging.info(f"DATABASE: Токен пользователя {user_id} получен")
+            return token
+    except Exception as e:
+        logging.error(e)
+
+
+def select_translate(user_id):
+    try:
+        with sqlite3.connect(path_to_db) as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                SELECT translate
+                FROM user_city
+                WHERE user_id = ?
+            ''', (user_id,))
+            token = cursor.fetchone()[0]
+            logging.info(f"DATABASE: Токен пользователя {user_id} получен")
+            return token
+    except Exception as e:
+        logging.error(e)
+
+
+def update_translate(translate, user_id):
+    try:
+        with sqlite3.connect(path_to_db) as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                UPDATE user_city
+                SET translate = ?
+                WHERE user_id = ?
+            ''', (translate, user_id))
+            conn.commit()
+            logging.info(f"DATABASE: Город пользователя {user_id} обновлены")
     except Exception as e:
         logging.error(e)
 

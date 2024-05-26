@@ -1,10 +1,7 @@
 import requests
-from config import GEO_TOKEN
-import logging
 
-logging.basicConfig(filename='logConfig.log', encoding='utf-8', level=logging.WARNING,
-                    format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s")
-logger = logging.getLogger(__name__)
+from config import GEO_TOKEN
+from log import logger
 
 keys_list = ['city', 'village', 'town', 'state', 'district']
 
