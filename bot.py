@@ -56,7 +56,7 @@ def start(message):
                                           '<u>Яндекса</u>.</b>\n\n'
                                           '<b>Нужна помощь - /help</b>', parse_mode='HTML', reply_markup=menu_key())
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка!', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -67,7 +67,7 @@ def weather(message):
                                           'информацию вы хотите \n'
                                           'получить о погоде:</b>', reply_markup=wheather_key(), parse_mode='HTML')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -78,7 +78,7 @@ def city_info(message):
                                           'информацию вы хотите \n'
                                           'получить о городе:</b>', reply_markup=city_info_key(), parse_mode='HTML')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -107,7 +107,7 @@ def photo_city_user_message(message):
                                                          f'<b>Описание:</b> <i>{description}</i>\n\n'
                                                          f'<b>Адрес:</b> <i>{address}</i>', parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -125,7 +125,7 @@ def a_brief_retelling_message(message):
                                           'и вставьте текст.</i>', reply_markup=types.ReplyKeyboardRemove(),
                          parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
     def text_user(message):
@@ -148,7 +148,7 @@ def a_brief_retelling_message(message):
             user_token -= use_token
             update_token(user_id, user_token)
         except Exception as e:
-            bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+            bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
             logger.error(e)
 
     bot.register_next_step_handler(message, text_user)
@@ -165,7 +165,7 @@ def choice_city_message(message):
         bot.send_message(message.chat.id, '<b>Выберите каким способом\n'
                                           'вы хотите добавить город:</b>', reply_markup=vbord_key(), parse_mode='HTML')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -176,7 +176,7 @@ def city_text_message(message):
                                           '<i>Не забудь проверить на \n'
                                           'правильность написания!</i>\n', parse_mode='HTML')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
     def city_text_to_city(message):
@@ -188,7 +188,7 @@ def city_text_message(message):
                                               f'<b>Данные верные?</b>', reply_markup=choice_key(), parse_mode='HTML')
             update_city(city, user_id)
         except Exception as e:
-            bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+            bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
             logger.error(e)
 
     bot.register_next_step_handler(message, city_text_to_city)
@@ -204,7 +204,7 @@ def city_yes(callback):
                                                    f'<i>Успешно сохранен✅</i>', reply_markup=menu_key(),
                          parse_mode='HTML')
     except Exception as e:
-        bot.send_message(callback.message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(callback.message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -221,7 +221,7 @@ def city_no(callback):
             return
         bot.send_message(callback.message.chat.id, 'Возвращаю в меню', reply_markup=menu_key())
     except Exception as e:
-        bot.send_message(callback.message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(callback.message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -231,7 +231,7 @@ def translate_fun_message(message):
         bot.send_message(message.chat.id, 'Напишите текст для\n'
                                           'перевода:', reply_markup=types.ReplyKeyboardRemove())
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
     def translate_text(message):
@@ -254,7 +254,7 @@ def translate_fun_message(message):
                              reply_markup=create_keyboard(
                                  ['🇷🇺', '🇬🇧', '🇧🇾', '🇩🇪', '🇪🇸', '🇪🇪', '🇫🇷', '🇯🇵', '🇵🇹', '🇷🇴', '🇰🇿']), parse_mode='html')
         except Exception as e:
-            bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+            bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
             logger.error(e)
 
     bot.register_next_step_handler(message, translate_text)
@@ -272,7 +272,7 @@ def translate_lang_message(message):
                                           f'<b>Изначальный текст:</b>\n'
                                           f'<i>{e}</i>', reply_markup=menu_key(), parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -300,7 +300,7 @@ def city_geo_message(message):
                                           'включена геолокация❗️</b>\n', reply_markup=geo_key(),
                          parse_mode='HTML')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
     def city_geo_to_city(message):
@@ -318,7 +318,7 @@ def city_geo_message(message):
             bot.send_message(message.chat.id, f'<b>Ваш город: {city}, {country} </b>\n\n'
                                               f'<i>Успешно сохранен✅</i>', reply_markup=menu_key(), parse_mode='HTML')
         except Exception as e:
-            bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+            bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
             logger.error(e)
 
     bot.register_next_step_handler(message, city_geo_to_city)
@@ -344,7 +344,7 @@ def weather_tomorrow_message(message):
         bot.edit_message_text(chat_id=message.chat.id, message_id=message_user.message_id,
                               text=tomorrow, parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -386,7 +386,7 @@ def weather_message(message):
         bot.edit_message_text(chat_id=message.chat.id, message_id=message_user.message_id,
                               text=weather_gpt, parse_mode='markdown', reply_markup=weather_clothes_key())
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -415,7 +415,7 @@ def clothes_callback(callback):
         bot.edit_message_text(chat_id=callback.message.chat.id, message_id=message_user.message_id,
                               text=clothes, parse_mode='markdown')
     except Exception as e:
-        bot.send_message(callback.message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(callback.message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -442,7 +442,7 @@ def forest_message(message):
         bot.edit_message_text(chat_id=message.chat.id, message_id=message_user.message_id,
                               text=forest, parse_mode='markdown')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -469,7 +469,7 @@ def facts_message(message):
         bot.edit_message_text(chat_id=message.chat.id, message_id=message_user.message_id,
                               text=facts, parse_mode='markdown')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -496,7 +496,7 @@ def attractions_message(message):
         bot.edit_message_text(chat_id=message.chat.id, message_id=message_user.message_id,
                               text=attractions, parse_mode='markdown')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
 
 
 @bot.message_handler(commands=['contacts'])
@@ -506,7 +506,7 @@ def contacts_commands(message):
         bot.send_message(message.chat.id, f'Свяжись с [создателем]({random_develop})',
                          parse_mode='Markdown')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -515,7 +515,7 @@ def back_menu_message(message):
     try:
         bot.send_message(message.chat.id, 'Возвращаемся в меню...', reply_markup=menu_key())
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -529,7 +529,7 @@ def help_commands(message):
                                           f'<b>/manual</b> - <i>Инструкция бота</i>', reply_markup=menu_key(),
                          parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=verno_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=verno_key())
         logger.error(e)
 
 
@@ -539,7 +539,7 @@ def log_commands(message):
         with open("logs.log", "rb") as f:
             bot.send_document(message.chat.id, f)
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка!', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -556,7 +556,7 @@ def log_commands(message):
                                           '<i>Выборг</i>\n'
                                           '<i>Красноярск</i>\n', parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
@@ -575,7 +575,7 @@ def manual_commands(message):
         )
         bot.send_message(message.chat.id, message_text, parse_mode='html')
     except Exception as e:
-        bot.send_message(message.chat.id, f'Произошла ошибка❗️{e}', reply_markup=menu_key())
+        bot.send_message(message.chat.id, 'Произошла ошибка❗️', reply_markup=menu_key())
         logger.error(e)
 
 
